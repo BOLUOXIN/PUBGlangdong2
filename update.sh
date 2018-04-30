@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "欢迎使用一键搭建"
-echo "支持QQ群：597070472"
-echo "即将搭建的是4.27版本"
+echo "即将开始搭建"
 echo "准备开始安装"
 read -p "回车后开始安装"
 echo "请输入你的内网ip" 
@@ -29,11 +28,10 @@ cd libpcap-1.8.1
 make
 make install
 
-git https://github.com/q2514994747/PUBGlangdong2.git
+git 
 cd PUBGlandong2/
 npm i
 npm i -g pino
 npm install -g forever
 forever start index.js sniff eth0 $ip | pino
 
-echo "搭建完成~QQ群597070472"
