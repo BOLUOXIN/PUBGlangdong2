@@ -28,7 +28,7 @@ cd libpcap-1.8.1
 make
 make install
 
-git 
+git https://github.com/BOLUOXIN/PUBGlangdong2.git
 cd PUBGlandong2/
 npm i
 npm i -g pino
